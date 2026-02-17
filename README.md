@@ -7,7 +7,7 @@ An IDE extension that lets you track the complete history of any line of code or
 ### Download & Install
 
 1. **Download** the latest release:
-   - [Download v1.0.0](https://github.com/yourusername/code-history-tracker/releases/latest)
+   - [Download v1.0.0](https://github.com/Shreybanugariya/code-history-tracker/releases/latest)
 
 2. **Install in your IDE:**
    - Open VS Code / Cursor / Windsurf
