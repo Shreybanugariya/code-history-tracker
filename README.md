@@ -1,17 +1,41 @@
 # Code History Tracker - VS Code Extension
 
-A VS Code extension that lets you track the complete history of any line of code or function without manually searching through git history.
+An IDE extension that lets you track the complete history of any line of code or function without manually searching through git history.
+
+## Installation
+
+### Download & Install
+
+1. **Download** the latest release:
+   - [Download v1.0.0](https://github.com/yourusername/code-history-tracker/releases/latest)
+
+2. **Install in your IDE:**
+   - Open VS Code / Cursor / Windsurf
+   - Press `Cmd+Shift+P` or `Ctrl+Shift+P`
+   - Type: `Extensions: Install from VSIX`
+   - Select the downloaded `.vsix` file
+   - Reload your IDE
+
+3. **Start using:**
+   - Hover over any line of code to see git history!
+
+### Compatible With
+- ✅ VS Code
+- ✅ Cursor IDE  
+- ✅ Windsurf (Antigravity)
+- ✅ VS Codium
+- ✅ Any VS Code fork
 
 ## Features
 
-### 🎯 Hover to See History
+### Hover to See History
 Simply hover over any line of code to see:
 - When it was last modified
 - Who made the change
 - The commit message
 - Total number of times the line was modified
 
-### 📊 Line History
+### Line History
 Right-click on any line and select "Show Line History" to see:
 - All commits that modified that specific line
 - Author information
@@ -20,37 +44,13 @@ Right-click on any line and select "Show Line History" to see:
 - Branch information
 - Full diff for each change
 
-### 🔍 Function History
+### Function History
 Right-click on a function and select "Show Function History" to:
 - Track the entire evolution of a function
 - See when it was created, modified, or removed
 - View all commits that touched that function
 - Understand how a function changed over time
 
-## Installation
-
-### From Source
-
-1. **Clone or download this extension:**
-   ```bash
-   cd ~/.vscode/extensions
-   git clone <this-repo> code-history-tracker
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   cd code-history-tracker
-   npm install
-   ```
-
-3. **Reload VS Code:**
-   - Press `Cmd+Shift+P` (Mac) or `Ctrl+Shift+P` (Windows/Linux)
-   - Type "Reload Window" and press Enter
-
-### Prerequisites
-
-- Git must be installed and accessible from command line
-- Your project must be a git repository
 
 ## Usage
 
@@ -148,18 +148,6 @@ The extension uses powerful git commands under the hood:
    - Lightweight, fast lookup
    - Cached to avoid repeated git calls
 
-## Supported Languages
-
-Function tracking works with languages that git understands:
-- ✅ JavaScript/TypeScript
-- ✅ Python
-- ✅ Java
-- ✅ C/C++
-- ✅ C#
-- ✅ Go
-- ✅ Ruby
-- ✅ PHP
-- ✅ Rust
 
 Line tracking works with **all** text files.
 
@@ -182,15 +170,6 @@ Future configuration options could include:
 Git operations are performed on-demand, so there's no performance impact when not using the extension.
 
 ## Troubleshooting
-
-### "Not a git repository" error
-- Make sure your workspace is a git repository
-- Run `git init` if needed
-
-### "Git command failed" error
-- Ensure git is installed: `git --version`
-- Check that git is in your PATH
-- Verify the file is tracked by git: `git ls-files <filename>`
 
 ### Function history not working
 - Make sure you're clicking on a function definition
