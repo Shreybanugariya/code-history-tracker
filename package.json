@@ -1,0 +1,73 @@
+{
+  "name": "code-history-tracker",
+  "displayName": "Code History Tracker",
+  "description": "Track code changes history - see all commits that modified a function or line with hover and right-click. A VS Code extension that lets you track the complete history of any line of code or function without manually searching through git history.",
+  "version": "1.0.0",
+  "publisher": "Shreybanugaria",
+  "author": {
+    "name": "Shrey",
+    "email": "shreybanugaria10@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shreybanugariya/code-history-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Shreybanugariya/code-history-tracker.git/issues"
+  },
+  "keywords": [
+    "git",
+    "history",
+    "blame",
+    "commit",
+    "tracking",
+    "code-archaeology",
+    "version-control",
+    "line history",
+    "function history",
+    "code history",
+    "history tracker",
+    "code history tracker"
+  ],
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "SCM Providers"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codeHistoryTracker.showLineHistory",
+        "title": "Show Line History"
+      },
+      {
+        "command": "codeHistoryTracker.showFunctionHistory",
+        "title": "Show Function History"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "codeHistoryTracker.showLineHistory",
+          "group": "navigation",
+          "when": "editorTextFocus"
+        },
+        {
+          "command": "codeHistoryTracker.showFunctionHistory",
+          "group": "navigation",
+          "when": "editorTextFocus"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.0.0"
+  }
+}
